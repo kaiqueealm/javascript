@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio01</title>
+</head>
+<body>
+    <h1>Qual e seu país</h1>
+    Nacionalidade <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="verificar" onclick="nacionalidade()">
+    <div id="res">
+
+    </div>
+    <script>
+        function nacionalidade(){
+            var txtn = window.document.getElementById('txtnac')
+            var res = window.document.querySelector('div#res')
+            var país = (txtn.value)
+            res.innerHTML = `<p>Estou vivendo ${país}</p>`
+            if(país == 'Brasil'){
+            res.innerHTML = `<p>voçê é <strong>brasileiro!</strong>`
+            }
+            else{
+            res.innerHTML = `<p>voçê é <strong>Estrangeiro!</strong></p>`
+            }
+
+        }
+    </script>
+</body>
+</html>
