@@ -8,7 +8,7 @@ function verificar(){
     }
     else{
         var fsex = document.getElementsByName('radsex')
-        var idade = ano - Number(fano.value)
+        var idade = ano - Number(fano.value) //number pra troca o teclado de letra por numero
         var genero = ''
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
@@ -48,7 +48,7 @@ function verificar(){
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
-        res.appendChild(img)
+        res.appendChild(img) // onde vai aparecer a imagem depois de tudo 
     }
 
 }
