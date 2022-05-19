@@ -1,4 +1,4 @@
-function fatorial(n){
+/*function fatorial(n){
     if (n == 1){
         return 1 
     }else {
@@ -15,3 +15,11 @@ n! = n x (n-1)!
 
 
 */
+
+let usuario2 = {
+    digaOi(name){
+        return `Olá ${name}`
+    }
+}
+
+console.log(usuario2.digaOi('kaique'))
