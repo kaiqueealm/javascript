@@ -5,7 +5,7 @@ function tabuada () {
         window.alert('Por favor, digite o numero!')
         
     }else{
-        let n = Number(num.value)// se nao ele pega o numero  /////n vai ser a variavael que o cara digitol e number para troca para numero
+        let n = Number(num.value)// se nao, ele pega o numero  /////n vai ser a variavael que o cara digitol e number para troca para numero
         let c = 1 
         tab.innerHTML = '' //para limpar a area antes de mostrar a tabauda tab recebe nada que as esclamações  
         while (c <= 10){
